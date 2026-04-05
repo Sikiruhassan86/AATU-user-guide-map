@@ -1,0 +1,162 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+#map {
+  width: 100%;
+  height: 100vh;
+}
+
+/* GENERAL CONTROL STYLE */
+.controls {
+  position: absolute;
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 8px;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  font-size: 14px;
+}
+
+/* SEARCH PANEL */
+.controls-search {
+  top: 15px;
+  left: 15px;
+  width: 280px;
+}
+
+.controls-search h3,
+.controls-nav h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+
+.controls-search input,
+.controls-search select,
+.controls-search button {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.controls-search button,
+.nav-buttons button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.controls-search button:hover,
+.nav-buttons button:hover {
+  background: #1d4ed8;
+}
+
+/* SUGGESTIONS */
+#suggestions {
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  max-height: 180px;
+  overflow-y: auto;
+  background: white;
+  margin-bottom: 8px;
+}
+
+.suggestion-item {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.suggestion-item:last-child {
+  border-bottom: none;
+}
+
+.suggestion-item:hover {
+  background: #f3f4f6;
+}
+
+/* 3D TOGGLE */
+.controls-3d {
+  top: 15px;
+  right: 15px;
+  width: auto;
+  white-space: nowrap;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+/* NAVIGATION PANEL */
+.controls-nav {
+  bottom: 20px;
+  left: 15px;
+  width: 320px;
+  max-height: 42vh;
+  overflow-y: auto;
+}
+
+.nav-row {
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-buttons button {
+  flex: 1;
+  padding: 8px 10px;
+}
+
+/* MANEUVER LIST */
+#maneuverList {
+  margin-top: 10px;
+  max-height: 140px;
+  overflow-y: auto;
+  border-top: 1px solid #ddd;
+  padding-top: 8px;
+}
+
+.maneuver-item {
+  padding: 6px 0;
+  border-bottom: 1px solid #f1f1f1;
+  font-size: 13px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  .controls-search {
+    width: calc(100% - 30px);
+    left: 15px;
+    right: 15px;
+    top: 15px;
+  }
+
+  .controls-3d {
+    top: 235px;
+    right: 15px;
+  }
+
+  .controls-nav {
+    width: calc(100% - 30px);
+    left: 15px;
+    bottom: 15px;
+    max-height: 34vh;
+  }
+}

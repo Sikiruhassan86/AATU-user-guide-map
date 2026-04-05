@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AATU Campus 3D Navigation WebGIS</title>
+
+  <!-- Mapbox CSS -->
+  <link
+    href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
+    rel="stylesheet"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- SEARCH PANEL -->
+  <div class="controls controls-search">
+    <h3>Campus Search</h3>
+
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search building or office..."
+      onkeyup="showSuggestions()"
+      autocomplete="off"
+    />
+
+    <div id="suggestions"></div>
+
+    <select id="routeMode">
+      <option value="walking">Walking</option>
+      <option value="driving">Driving</option>
+    </select>
+
+    <button type="button" onclick="searchLocation()">Search</button>
+  </div>
+
+  <!-- 3D TOGGLE -->
+  <div class="controls controls-3d">
+    <label class="toggle-label">
+      <input type="checkbox" id="toggle3D" checked />
+      Enable 3D Buildings
+    </label>
+  </div>
+
+  <!-- NAVIGATION PANEL -->
+  <div class="controls controls-nav" id="navigationPanel">
+    <h3>Navigation</h3>
+
+    <div class="nav-row">
+      <strong>Destination:</strong>
+      <span id="navDestination">None</span>
+    </div>
+
+    <div class="nav-row">
+      <strong>Mode:</strong>
+      <span id="navMode">-</span>
+    </div>
+
+    <div class="nav-row">
+      <strong>Distance:</strong>
+      <span id="navDistance">-</span>
+    </div>
+
+    <div class="nav-row">
+      <strong>ETA:</strong>
+      <span id="navEta">-</span>
+    </div>
+
+    <div class="nav-row">
+      <strong>Status:</strong>
+      <span id="navStatus">Idle</span>
+    </div>
+
+    <div class="nav-row">
+      <strong>Next instruction:</strong>
+      <span id="navInstruction">-</span>
+    </div>
+
+    <div class="nav-row">
+      <strong>Distance to turn:</strong>
+      <span id="navTurnDistance">-</span>
+    </div>
+
+    <div class="nav-buttons">
+      <button type="button" onclick="startNavigation()">Start Navigation</button>
+      <button type="button" onclick="stopNavigation()">Stop Navigation</button>
+      <button type="button" onclick="recenterOnUser()">Recenter</button>
+    </div>
+
+    <div id="maneuverList"></div>
+  </div>
+
+  <!-- MAP -->
+  <div id="map"></div>
+
+  <!-- Mapbox JS -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
