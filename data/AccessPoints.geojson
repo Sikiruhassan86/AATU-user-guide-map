@@ -1,0 +1,20 @@
+{
+"type": "FeatureCollection",
+"name": "AccessPoints",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "OBJECTID": 1, "Name": "LECTURE THEATRE A", "access_id": 1, "building_id": 1 }, "geometry": { "type": "Point", "coordinates": [ 3.828232214000025, 7.240968035000037 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 2, "Name": "LECTURE THEATRE B", "access_id": 2, "building_id": 6 }, "geometry": { "type": "Point", "coordinates": [ 3.828059703000065, 7.240794335000032 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 3, "Name": "FACULTY OF ENVIRONMENTAL SCIENCE AND MANAGEMENT", "access_id": 3, "building_id": 27 }, "geometry": { "type": "Point", "coordinates": [ 3.826766831000043, 7.240487438000059 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 4, "Name": "REGISTRY DEPARTMENT", "access_id": 4, "building_id": 25 }, "geometry": { "type": "Point", "coordinates": [ 3.825672811000061, 7.23990165500004 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 5, "Name": "NEW ACADEMIC BUILDING", "access_id": 5, "building_id": 13 }, "geometry": { "type": "Point", "coordinates": [ 3.823592312000073, 7.240323411000077 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 6, "Name": "BIOLOGICAL SCIENCE BUILDING", "access_id": 6, "building_id": 11 }, "geometry": { "type": "Point", "coordinates": [ 3.823219620000032, 7.239892245000021 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 7, "Name": "FACULTY OF NATURAL AND APPLIED SCIENCE", "access_id": 7, "building_id": 10 }, "geometry": { "type": "Point", "coordinates": [ 3.822630632000028, 7.239621819000035 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 8, "Name": "ELSALEM BLOCK D", "access_id": 8, "building_id": 16 }, "geometry": { "type": "Point", "coordinates": [ 3.821223060000023, 7.239159956000037 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 9, "Name": "ELSALEM BLOCK F", "access_id": 9, "building_id": 17 }, "geometry": { "type": "Point", "coordinates": [ 3.821381889000065, 7.239090357000066 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 10, "Name": "ELSALEM BLOCK E", "access_id": 10, "building_id": 18 }, "geometry": { "type": "Point", "coordinates": [ 3.821198998000057, 7.239126715000054 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 12, "Name": "FEMALE UNIVERSITY HOSTEL", "access_id": 11, "building_id": 21 }, "geometry": { "type": "Point", "coordinates": [ 3.820575853000037, 7.239503111000033 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 15, "Name": "MALE UNIVERSITY HOSTEL", "access_id": 12, "building_id": 22 }, "geometry": { "type": "Point", "coordinates": [ 3.820667299000036, 7.239881306000029 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 16, "Name": "FACULTY OF ENGINEERING", "access_id": 13, "building_id": 9 }, "geometry": { "type": "Point", "coordinates": [ 3.823218610000026, 7.238678309000022 ] } }
+]
+}

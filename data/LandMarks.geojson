@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "LandMarks",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "OBJECTID": 1, "Name": "RAHMAN NOODLES" }, "geometry": { "type": "Point", "coordinates": [ 3.820964360000062, 7.239449379000064 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 2, "Name": "LAGOS-IBADAN EXPRESSWAY" }, "geometry": { "type": "Point", "coordinates": [ 3.820221254000046, 7.241593511000076 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 3, "Name": "MAIN GATE" }, "geometry": { "type": "Point", "coordinates": [ 3.823078987000031, 7.241971846000069 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 4, "Name": "CIRCULAR EXPRESSWAY" }, "geometry": { "type": "Point", "coordinates": [ 3.82528891100003, 7.245654656000056 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 5, "Name": "IBADAN-IFE EXPRESSWAY" }, "geometry": { "type": "Point", "coordinates": [ 3.828810513000064, 7.242633931000057 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 6, "Name": "SECOND GATE" }, "geometry": { "type": "Point", "coordinates": [ 3.82836640000005, 7.242401671000039 ] } }
+]
+}

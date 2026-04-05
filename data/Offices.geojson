@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "Offices",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "OBJECTID": 1, "Name": "ICT", "building_id": 26, "faculty": "", "office_type": "ADMINISTRATION", "office_id": 1, "building_name": "ADMINISTRATIVE BUILDING" }, "geometry": { "type": "Point", "coordinates": [ 3.826140498000029, 7.239782879000074 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 2, "Name": "PURCHASING OFFICE", "building_id": 27, "faculty": "FACULTY OF ENVIRONMENTAL SCIENCE AND MANAGEMENT", "office_type": "PURCHASE", "office_id": 2, "building_name": "FACULTY OF ENVIRONMENTAL SCIENCE AND MANAGEMENT" }, "geometry": { "type": "Point", "coordinates": [ 3.826906208000025, 7.240377744000057 ] } },
+{ "type": "Feature", "properties": { "OBJECTID": 3, "Name": "OJUANU FOOD VENDOR", "building_id": 22, "faculty": "", "office_type": "FOOD VENDOR", "office_id": 3, "building_name": "MALE UNIVERSITY HOSTEL" }, "geometry": { "type": "Point", "coordinates": [ 3.820492089000027, 7.239806115000022 ] } }
+]
+}
